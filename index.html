@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Increment Widget</title>
+<style>
+  body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+  #counter { font-size: 2em; }
+  button { font-size: 1.5em; padding: 10px 20px; }
+</style>
+</head>
+<body>
+  <div id="counter">0</div>
+  <button onclick="increment()">Increment</button>
+
+  <script>
+    let count = 0;
+    function increment() {
+      count++;
+      document.getElementById('counter').innerText = count;
+    }
+  </script>
+</body>
+</html>
